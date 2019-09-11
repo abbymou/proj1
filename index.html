@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="css/main.css" rel="stylesheet">
 
   </head>
@@ -55,27 +57,27 @@
         <div class="col-9 green">
           <h2>Dashboard</h2>
         </div>
-        <div class="col-3 green">
+        <div class="col-3 green search">
           <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" style="width:100%">
+            <button class="btn my-2 my-sm-0 fa fa-fw fa-search search-button" type="submit"></button>
           </form>
         </div>
       </div>
   </div>
 
-  <div class="jumbotron">
+  <div class="jumbo gradient">
     <div class="container-fluid2">
-          <div class="row">
-            <div class="col-3 announcements white">
+          <div class="row row-1">
+            <div class="col-2 announcements white">
               <p>ANNOUNCEMENTS</p>
             </div>
-            <div class="col-8 white lorem">
+            <div class="col-9 white lorem">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
-            <div class="col-1 white arrow">
-              <a href="#" class="button"><img src="../images/button.png"></a>
-              <a href="#" class="button"><img src="../images/button.png"></a>
+            <div class="col-1 white">
+              <a href="#" class="button"></a>
+              <a href="#" class="button"></a>
             </div>
           </div>
 
@@ -83,7 +85,12 @@
             <div class="col-4">
               <div class="row">
                 <div class="col-12 white">
-                <h2 class="blue">Tasks</h2>
+                  <div class="row">
+                    <div class="col-12 tasks">
+                    <h2 class="blue">Tasks</h2>
+                    <button class="gear fa fa-fw fa-cog"></button>
+                  </div>
+                </div>
                 <ul>
                   <li>Welcome Contacts</li>
                   <li>Provide Responses</li>
@@ -106,27 +113,28 @@
             </div>
 
 
-            <div class="col-8 eight">
+            <div class="col-8">
               <div class="row white">
                 <h2 class="blue">Analytics</h2>
               </div>
               <div class="row analytics white">
                 <div class="col-9 white">
-                  <img src="../images/graph.main">
+                  <p>Activity</p>
+                  <img src="images/main-graph.png"  class="main-graph">
                 </div>
                 <div class="col-3 white">
-                  <p>2</p>
+                  <img src="images/pie.png"  class="main-graph-2">
                 </div>
               </div>
               <div class="row white">
                 <p>boxes</p>
               </div>
 
-              <div class="row white">
-                <div class="col-6 white">
+              <div class="row people">
+                <div class="col-6 white people-2">
                   <p>pic 1</p>
                 </div>
-                <div class="col-6 white">
+                <div class="col-6 white people-2">
                   <p>pic 2</p>
                 </div>
               </div>
@@ -140,18 +148,18 @@
 
           <div class="row">
             <div class="col-4 blue-2">
-                <div class="row white-background">
-                  <p>Image</p>
+                <div class="row bottom-1">
+                  <p></p>
                 </div>
             </div>
             <div class="col-4 blue-2">
-              <div class="row white-background">
-                <p>Image</p>
+              <div class="row bottom-2">
+                <p></p>
               </div>
             </div>
             <div class="col-4 blue-2">
-              <div class="row white-background">
-                <p>Image</p>
+              <div class="row bottom-3">
+                <p></p>
               </div>
             </div>
           </div>
