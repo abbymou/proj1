@@ -22,6 +22,26 @@
   text-align: right;
 }
 
+.nav-image {
+  width: 50px;
+  height: auto;
+}
+
+.nav-center {
+  list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.nav-center li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+}
+
 /******* MAIN ********/
 
 body {
@@ -35,6 +55,10 @@ h2 {
 
 img {
   width: 100%;
+}
+
+p {
+  font-size: 1.2vw;
 }
 
 .container-fluid {
@@ -82,14 +106,6 @@ img {
   height: 55px;
 }
 
-.announcements {
-  color: #fe7f13;
-  font-size: 1rem;
-}
-
-.lorem {
-
-}
 
 .white {
   background-color: #fff;
@@ -99,20 +115,34 @@ img {
 
 .tasks {
   background-color: #fff;
-  padding: 15px;
+  padding: 5% 10%;
 }
 
 .arrow {
   width: 2px;
 }
 
-.button {
-  border: 2px solid black;
+.col-1 {
+  padding: 1%;
+}
+
+.button-left {
   border-radius: 50%;
   padding: 2px;
-  box-shadow: 1px 1px 0.5px grey;
-  width: 10px;
-  background-image: url(../images/button.png);
+  /* box-shadow: 1px 1px 0.5px grey; */
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/left-button.png);
+  background-size: cover;
+}
+
+.button-right {
+  border-radius: 50%;
+  padding: 2px;
+  /* box-shadow: 1px 1px 0.5px grey; */
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url(../images/right-button.png);
   background-size: cover;
 }
 
@@ -125,20 +155,162 @@ img {
   top: 1.5rem;
 }
 
+.tasks-list {
+  font-size: 1.5vw;
+  color: #2498f4;
+}
+
+.tasks-list-2 {
+  border-bottom: 2px solid #f6f6f6;
+}
+
+.spacing {
+  margin: 1rem 0;
+}
+
+.little {
+  font-size: 0.9vw;
+  margin-bottom: -5px;
+}
+
+.recs {
+  font-size: 1.2vw;
+}
+
+.welcome-button {
+  position: absolute;
+  right: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  z-index: 2;
+  border: 1px solid #f6f6f6;
+  background-image: url(../images/36.png);
+  background-size: cover;
+  margin: 3px;
+}
+
+.reach-button {
+  position: absolute;
+  right: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  z-index: 2;
+  border: 1px solid #f6f6f6;
+  background-image: url(../images/3.png);
+  background-size: cover;
+  margin: 3px;
+}
+
+.activity {
+  display: block;
+  float: left;
+  text-align: left;
+}
+
+.date {
+  text-align: right;
+  border: 2px solid #f6f6f6;
+  float: right;
+  display: block;
+}
+
+.date-button {
+  position: absolute;
+  right: 1rem;
+  width: 3rem;
+  height: 1.5rem;
+  z-index: 2;
+  border: 1px solid #f6f6f6;
+  background-image: url(../images/36.png);
+  background-size: cover;
+}
+
 .main-graph {
   padding: 1px;
-  height: 210px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .main-graph-2 {
   padding: 1px;
-  height: 250px;
-  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+/***** Code From W3 Schools *****/
+.container-check {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-check input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .blue {
   color: #2498f4;
+  font-size: 2vw;
+}
+
+.list-rec {
+  font-size: 1vw;
 }
 
 .people {
@@ -147,12 +319,24 @@ img {
   border: 2px solid #f6f6f6;
 }
 
-.graph {
-  background-color: #FA8072;
+.blue-3 {
+  background-color: #2498f4;
+  padding: 5% 10%;
+  color: #fff;
 }
 
-.pie {
-  background-color: 	#F08080;
+.back-button-left {
+  float: left;
+  height: 3rem;
+  width: auto;
+  padding: 0;
+}
+
+.back-button-right {
+  float: right;
+  height: 3rem;
+  width: auto;
+  padding: 0;
 }
 
 .blue-2 {
@@ -166,23 +350,70 @@ img {
   background-image: url(../images/bottom-1.png);
   background-size: cover;
   height: 170px;
+  border-radius: 4%;
 }
 
 .bottom-2 {
-  padding: 10px;
   margin: 15px;
   background-image: url(../images/bottom-2.png);
   height: 170px;
   background-size: cover;
+  border-radius: 4%;
+}
+
+.green-box {
+  height: 2rem;
+  width: 90%;
+  margin: auto;
+  background-color: #33cc66;
+  border-radius: 3%;
 }
 
 .bottom-3 {
-  padding: 10px;
+  padding-left: 10px;
   margin: 15px;
   background-image: url(../images/bottom-3.png);
   height: 170px;
   background-size: cover;
+  border-radius: 4%;
+  padding: 10px;
 }
+
+#announcements {
+  color: #fe7f13;
+  font-size: 1.1vw;
+}
+
+#know {
+  font-size: 1rem;
+  color: #fff;
+}
+
+#watch {
+  font-size: 1.2rem;
+  color: #33cc66;
+  text-align: right;
+}
+
+#see {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+#version {
+  font-size: 1.2rem;
+  color: #fe7f13;
+  text-align: left;
+  padding: 40px 10px;
+}
+
+#lorem {
+  font-size: 1vw;
+}
+
 
 /****** FOOTER ******/
 

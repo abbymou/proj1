@@ -31,17 +31,26 @@
   </div>
 </div>
 
-<nav class="navbar navbar-expand-md navbar-dark nav-background mb-4">
+<nav class="navbar navbar-expand-md nav-background mb-4">
 <div class="collapse navbar-collapse" id="navbarCollapse">
-  <ul class="navbar-nav mr-auto">
+  <ul class="navbar-nav mr-auto nav-center">
     <li class="nav-item active">
-      <a class="nav-link icon-1" href="#">Home<span class="sr-only">(current)</span></a>
+      <a class="nav-link icon-1" href="#"><img class="nav-image" src="images/icon-1.png"><span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#" >Link</a>
+      <a class="nav-link" href="#" ><img class="nav-image" src="images/icon-2.png"></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#"><img class="nav-image" src="images/icon-3.png"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img class="nav-image" src="images/icon-4.png"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img class="nav-image" src="images/icon-5.png"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><img class="nav-image" src="images/icon-6.png"></a>
     </li>
   </ul>
 </div>
@@ -69,16 +78,16 @@
   <div class="jumbo gradient">
     <div class="container-fluid2">
           <div class="row row-1">
-            <div class="col-2 announcements white">
-              <p>ANNOUNCEMENTS</p>
+            <div class="col-2 white">
+              <p id="announcements">ANNOUNCEMENTS</p>
             </div>
             <div class="col-9 white lorem">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
             </div>
-            <div class="col-1 white">
-              <a href="#" class="button"></a>
-              <a href="#" class="button"></a>
-            </div>
+            <span class="col-1 white">
+              <button class="button-left"></button>
+              <button class="button-right"></button>
+            </span>
           </div>
 
           <div class="row">
@@ -91,22 +100,55 @@
                     <button class="gear fa fa-fw fa-cog"></button>
                   </div>
                 </div>
-                <ul>
-                  <li>Welcome Contacts</li>
-                  <li>Provide Responses</li>
-                  <li>Review Activity</li>
-                  <li>Reach Out</li>
+                <ul class="tasks-list">
+                  <div class="row tasks-list-2 spacing">
+                    <li>Welcome Contacts</li>
+                    <button class="welcome-button"></button>
+                  </div>
+                  <!-- <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
+                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
+                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
+                    <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
+                  </ul> -->
+                  <div class="row spacing">
+                    <li>Provide Responses</li>
+                    <button class="welcome-button"></button>
+                  </div>
+                  <div class="row spacing">
+                    <li>Review Activity</li>
+                    <button class="welcome-button"></button>
+                  </div>
+                  <div class="row spacing">
+                    <li>Reach Out</li>
+                    <button class="reach-button"></button>
+                  </div>
                 </ul>
               </div>
               </div>
               <div class="row">
                 <div class="col-12 white">
                   <h2 class="blue">Recommendations</h2>
-                  <ul>
-                    <li>7 Steps to getting more Fans</li>
-                    <li>Increase traction with more interactions</li>
-                    <li>Creating a Promotion</li>
-                    <li>Share More</li>
+                  <ul class="list-rec fa-ul">
+                    <div>
+                      <li><i class="far fa-file-alt"></i>
+                        <p class="little">Article</p><p class="recs">7 Steps to getting more Fans</p>
+                      </li>
+                    </div>
+                    <div>
+                      <li><p class="little">Article</p><p class="recs">Increase traction with more interactions</p>
+                      </li>
+                    </div>
+                    <div>
+                      <li>
+                        <p class="little">Checklist</p><p class="recs">Creating a Promotion</p>
+                      </li>
+                    </div>
+                    <div>
+                      <li>
+                        <p class="little">Tip</p><p class="recs">Share More</p>
+                      </li>
+                    </div>
                   </ul>
                 </div>
               </div>
@@ -117,17 +159,44 @@
               <div class="row white">
                 <h2 class="blue">Analytics</h2>
               </div>
-              <div class="row analytics white">
+              <div class="row white">
                 <div class="col-9 white">
-                  <p>Activity</p>
+                  <div class="row">
+                    <span class="activity">
+                      <p>Activity</p>
+                    </span>
+                    <span class="date">
+                      <p>02/28/11-07/21/11</p>
+                      <!-- <button class="date-button"></button> -->
+                    </span>
+                  </div>
                   <img src="images/main-graph.png"  class="main-graph">
                 </div>
                 <div class="col-3 white">
+                  <p>Channels</p>
                   <img src="images/pie.png"  class="main-graph-2">
                 </div>
               </div>
               <div class="row white">
-                <p>boxes</p>
+                <label class="container-check">Facebook
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-check">Twitter
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-check">Foursquare
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container-check">Google+
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
               </div>
 
               <div class="row people">
@@ -139,9 +208,12 @@
                 </div>
               </div>
               <div class="row white">
-                <div class="col-12 white">
-                <p>Do you know?</p>
-              </div>
+                <span class="col-12 blue-3">
+                  <!-- <img src="images/back-button.png" class="back-button-left"> -->
+                  <h3 id="know">DID YOU KNOW?</h3>
+                  <p id="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                  <!-- <img src="images/back-button.png" class="back-button-right"> -->
+              </span>
               </div>
             </div>
           </div>
@@ -149,17 +221,19 @@
           <div class="row">
             <div class="col-4 blue-2">
                 <div class="row bottom-1">
-                  <p></p>
+                  <h3 id="watch">Watch What <br>You Say</h3>
                 </div>
             </div>
             <div class="col-4 blue-2">
               <div class="row bottom-2">
-                <p></p>
+                <div class="green-box">
+                  <p id="see">See what others are doing with us</p>
+                </div>
               </div>
             </div>
             <div class="col-4 blue-2">
               <div class="row bottom-3">
-                <p></p>
+                <h3 id="version">Version 2.0 <br> is coming</h3>
               </div>
             </div>
           </div>
