@@ -37,10 +37,13 @@
   </div>
 <!--- Main Nav--->
   <nav class="navbar navbar-expand-md nav-background mb-4">
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto nav-center">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="collapse navbar-collapse nav-center" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto" style="text-align:center">
       <li class="nav-item active">
-        <a class="nav-link icon-1" href="#"><img class="nav-image" src="images/icon-1.png"><span class="sr-only">(current)</span></a>
+        <a class="nav-link icon-1" href="#"><img class="nav-image" src="images/icon-1.png" alt="Home 1"><span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#" ><img class="nav-image" src="images/icon-2.png"></a>
@@ -109,29 +112,25 @@
                 </div>
                 <ul class="tasks-list">
                   <div class="row tasks-list-2 spacing">
-                    <a href="#">
-                      <li>Welcome Contacts
-                      <img src="images/36.png" style="width:3vw"> </li>
-                      <!-- <button class="welcome-button"></button> -->
+                    <a href="#" class="tasks-link">
+                      <li class="number">Welcome Contacts
+                      <img src="images/36.png" class="tasks-icon"></li>
                     </a>
                   </div>
-                  <!-- <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List icons can</li>
-                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>be used to</li>
-                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>replace bullets</li>
-                    <li><span class="fa-li"><i class="far fa-square"></i></span>in lists</li>
-                  </ul> -->
                   <div class="row spacing">
-                    <li>Provide Responses</li>
-                    <button class="welcome-button"></button>
+                    <li class="number">Provide Responses
+                      <img src="images/36.png" class="tasks-icon">
+                    </li>
                   </div>
                   <div class="row spacing">
-                    <li>Review Activity</li>
-                    <button class="welcome-button"></button>
+                    <li class="number">Review Activity
+                      <img src="images/36.png" class="tasks-icon-2">
+                    </li>
                   </div>
                   <div class="row spacing">
-                    <li>Reach Out</li>
-                    <button class="reach-button"></button>
+                    <li class="number">Reach Out
+                      <img src="images/3.png" class="tasks-icon-3">
+                    </li>
                   </div>
                 </ul>
               </div>
@@ -140,23 +139,23 @@
               <div class="row">
                 <div class="col-12 white">
                   <h2 class="blue">Recommendations</h2>
-                  <ul class="list-rec fa-ul">
+                  <ul class="list-rec">
                     <div>
-                      <li><i class="far fa-file-alt"></i>
+                      <li class="doc">
                         <p class="little">Article</p><p class="recs">7 Steps to getting more Fans</p>
                       </li>
                     </div>
                     <div>
-                      <li><p class="little">Article</p><p class="recs">Increase traction with more interactions</p>
+                      <li class="doc"><p class="little">Article</p><p class="recs">Increase traction with more interactions</p>
                       </li>
                     </div>
                     <div>
-                      <li>
+                      <li class="check">
                         <p class="little">Checklist</p><p class="recs">Creating a Promotion</p>
                       </li>
                     </div>
                     <div>
-                      <li>
+                      <li class="bulb">
                         <p class="little">Tip</p><p class="recs">Share More</p>
                       </li>
                     </div>
@@ -166,25 +165,28 @@
             </div>
 <!--- Analystics Row/Column--->
             <div class="col-8">
-              <div class="row white">
+              <div class="row white" id="analytics">
                 <h2 class="blue">Analytics</h2>
               </div>
               <div class="row white">
                 <div class="col-9 white">
                   <div class="row">
-                    <span class="activity">
+                    <div class="col-6 col-3 activity">
                       <p>Activity</p>
-                    </span>
-                    <span class="date">
-                      <p>02/28/11-07/21/11</p>
-                      <!-- <button class="date-button"></button> -->
-                    </span>
+                    </div>
+                    <div class="col-6-lg col-3-sm" style="padding-left:3vw;">
+                      <span class="date-1">
+                        <p>02/28/11-07/21/11</p>
+                      </span>
+                      <span class="date-2">
+                        <button class="date-button"></button>
+                      </span>
+                    </div>
                   </div>
 <!--- Graphs Section --->
                   <img src="images/main-graph.png"  class="main-graph">
                 </div>
                 <div class="col-3 white">
-                  <p>Channels</p>
                   <img src="images/pie.png"  class="main-graph-2">
                 </div>
               </div>
