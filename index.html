@@ -36,7 +36,7 @@
     </div>
   </div>
 <!--- Main Nav--->
-  <nav class="navbar navbar-expand-md nav-background mb-4">
+  <!-- <nav class="navbar navbar-expand-md nav-background mb-4">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -62,7 +62,33 @@
       </li>
     </ul>
   </div>
-  </nav>
+</nav> -->
+
+<nav class="nav-background">
+<div>
+    <ul class="nav">
+      <li class="active-2">
+          <a class="nav-link" href="#" ><img class="nav-1" src="images/icon-1.png"></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#" ><img class="nav-1" src="images/icon-2.png"></a>
+      </li>
+      <li>
+          <a class="nav-link" href="#"><img class="nav-1" src="images/icon-3.png"></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#" ><img class="nav-1" src="images/icon-4.png"></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#" ><img class="nav-1" src="images/icon-5.png"></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#" ><img class="nav-1" src="images/icon-6.png"></a>
+      </li>
+    </ul>
+  </div>
+<img src="images/marker.png" class="marker">
+</nav>
 
 <!--- MAIN -->
 
@@ -111,54 +137,69 @@
                   </div>
                 </div>
                 <ul class="tasks-list">
-                  <div class="row tasks-list-2 spacing">
+                  <div class="row spacing">
                     <a href="#" class="tasks-link">
                       <li class="number">Welcome Contacts
                       <img src="images/36.png" class="tasks-icon"></li>
                     </a>
                   </div>
+                  <hr class="line">
                   <div class="row spacing">
+                    <a href="#" class="tasks-link">
                     <li class="number">Provide Responses
                       <img src="images/36.png" class="tasks-icon">
                     </li>
+                  </a>
                   </div>
+                  <hr class="line">
                   <div class="row spacing">
+                    <a href="#" class="tasks-link">
                     <li class="number">Review Activity
                       <img src="images/36.png" class="tasks-icon-2">
-                    </li>
+                    </li></a>
                   </div>
+                  <hr class="line">
                   <div class="row spacing">
+                    <a href="#" class="tasks-link">
                     <li class="number">Reach Out
                       <img src="images/3.png" class="tasks-icon-3">
-                    </li>
+                    </li></a>
                   </div>
                 </ul>
               </div>
               </div>
 <!--- Recomendations Row/Column--->
               <div class="row">
-                <div class="col-12 white">
+                <div class="col-12 white full-height">
                   <h2 class="blue">Recommendations</h2>
                   <ul class="list-rec">
                     <div>
+                      <a href="#" class="rec-link">
                       <li class="doc">
                         <p class="little">Article</p><p class="recs">7 Steps to getting more Fans</p>
-                      </li>
+                      </li></a>
                     </div>
+                    <hr class="dash">
                     <div>
+                      <a href="#" class="rec-link">
                       <li class="doc"><p class="little">Article</p><p class="recs">Increase traction with more interactions</p>
-                      </li>
+                      </li></a>
                     </div>
+                    <hr class="dash">
                     <div>
+                      <a href="#" class="rec-link">
                       <li class="check">
                         <p class="little">Checklist</p><p class="recs">Creating a Promotion</p>
-                      </li>
+                      </li></a>
                     </div>
+                    <hr class="dash">
                     <div>
+                      <a href="#" class="rec-link">
                       <li class="bulb">
                         <p class="little">Tip</p><p class="recs">Share More</p>
-                      </li>
+                      </li></a>
                     </div>
+                    <hr class="dash">
                   </ul>
                 </div>
               </div>
@@ -168,8 +209,8 @@
               <div class="row white" id="analytics">
                 <h2 class="blue">Analytics</h2>
               </div>
-              <div class="row white">
-                <div class="col-9 white">
+              <div class="row white-2">
+                <div class="col-9 white-2">
                   <div class="row">
                     <div class="col-6 col-3 activity">
                       <p>Activity</p>
@@ -186,28 +227,36 @@
 <!--- Graphs Section --->
                   <img src="images/main-graph.png"  class="main-graph">
                 </div>
-                <div class="col-3 white">
+                <div class="col-3 white-2">
                   <img src="images/pie.png"  class="main-graph-2">
                 </div>
               </div>
 <!--- Social Media Row--->
-              <div class="row white">
-                <label class="container-check">Facebook
+              <div class="row social-row">
+                <span>
+                <label class="container-check"><p id="facebook">Facebook</p>
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container-check">Twitter
+                </span>
+                <span>
+                  <label class="container-check"><p id="twitter">Twitter</p>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container-check">Foursquare
+                </span>
+                <span>
+                  <label class="container-check"><p id="foursquare">Foursquare</p>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
-                  <label class="container-check">Google+
+                </span>
+                <span>
+                  <label class="container-check"><p id="google">Google+</p>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                   </label>
+                </span>
               </div>
 <!--- Contacts/Customers Row/Cloumns--->
   <!--- Green --->
@@ -264,6 +313,7 @@
             <div class="col-4 blue-2">
                 <div class="row bottom-1">
                   <h3 id="watch">Watch What <br>You Say</h3>
+                  <p id="message">Message Management</p>
                 </div>
             </div>
             <div class="col-4 blue-2">
@@ -286,15 +336,18 @@
 <!--- FOOTER -->
 
   <div class ="container-footer">
-    <div class="row">
-      <div class="col-4 white align">
-        <p>Tutorials | Support | Blog</p>
+    <div class="row footer-style">
+      <div class="col-4 align">
+        <p>Tutorials  |  Support  |  Blog</p>
       </div>
-      <div class="col-5 white">
-        <p>Ariel Winter likes your Win A Cooper Sweepstakes Promotion</p>
+      <div class="col-5 middle-footer">
+        <p><a href="#" class="footer-link">Ariel Winter</a> likes your <a href="#" class="footer-link">Win A Cooper Sweepstakes</a> Promotion</p>
       </div>
-      <div class="col-3 white">
-        <p>Logout</p>
+      <div class="col-1 logout-footer">
+        <img src="images/footer-img.png" class="footer-img"><a href="#" class="footer-link">Logout</a>
+      </div>
+      <div class="col-1 social-footer">
+        <img src="images/footer-social.png" class="footer-img-social">
       </div>
     </div>
   </div>
