@@ -51,6 +51,7 @@
   list-style: none;
   margin: auto;
   margin-left: 35%;
+  margin-bottom: 0;
   padding-bottom: 1vw;
   text-align: center;
 }
@@ -83,9 +84,18 @@
 }
 
 /* Code attained from https://codepen.io/stilllife00/pen/avXpgJ */
-.nav-1:hover {
+.nav-1:hover, .nav-1:active, .nav-link:active {
   -webkit-filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
   filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
+
+.active {
+  -webkit-filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+  filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(-180deg) saturate(700%) contrast(0.8);
+}
+
+.nav-1:visited  {
+  opacity: 0.5;
 }
 
 /* .active-2 {
@@ -256,13 +266,18 @@ hr {
   background-size: cover;
 }
 
+.active-2 {
+  -webkit-filter: grayscale(100%) ;
+  filter: grayscale(100%) ;
+}
+
 .tasks-list {
   font-size: 1.5vw;
   color: #2498f4;
 }
 
-.tasks-link:hover {
-  color: #cccccc;
+.tasks-link:hover  {
+  filter: grayscale(100%) ;
   text-decoration: none;
 }
 
@@ -279,28 +294,12 @@ hr {
   margin-left: 2vw;
 }
 
-.tasks-icon:hover {
-  opacity: 0.5;
-}
-
-.tasks-icon:visited {
-  opacity: 0.5;
-}
-
 .tasks-icon-2 {
   width: 3.3vw;
   height: 1.7vw;
   float: right;
   display: inline;
   margin-left: 4.5vw;
-}
-
-.tasks-icon-2:hover {
-  opacity: 0.5;
-}
-
-.tasks-icon-2:visited {
-  opacity: 0.5;
 }
 
 .tasks-icon-3 {
@@ -390,6 +389,11 @@ li.bulb {
   padding: 0 0 0 3vw;
 }
 
+button:active {
+  border: none;
+  color: orange;
+}
+
 @media only screen and (max-width: 800px) {
   ul.list-rec, ul.tasks-list {
     margin-left: -40px;
@@ -474,9 +478,13 @@ li.bulb {
 }
 
 .main-graph-2 {
-  padding: 1px;
+  padding: 1%;
   height: auto;
-  width: 100%;
+  width: 70%;
+}
+
+.pie-graph {
+  border-left: 2px solid #f4f4f4;
 }
 
 .social-row {
@@ -681,7 +689,7 @@ li.bulb {
   background-image: url(../images/bottom-2.png);
   height: 170px;
   background-size: cover;
-  border-radius: 4%;
+  border-radius: 10px;
 }
 
 .green-box {
@@ -689,7 +697,7 @@ li.bulb {
   width: 90%;
   margin: auto;
   background-color: #33cc66;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 .bottom-3 {
@@ -698,7 +706,7 @@ li.bulb {
   background-image: url(../images/bottom-3.png);
   height: 170px;
   background-size: cover;
-  border-radius: 4%;
+  border-radius: 10px;
   padding: 10px;
 }
 
